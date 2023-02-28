@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: darkblue;
+  height: 17vh;
+}
+
+
+header > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header > ul > li {
+  padding: 10px;
+}
+
+header > ul > li:hover {
+  border-bottom: 2px solid white;
+  color: white;
+  transition: 800ms linear 200ms;
+}
+
+
+
+@media screen and (min-width:930px) {
+  header > ul {
+    width: 80%;
+  }
+  .logo {
+  width: 20%;
+    }
+}
+
+@media screen and (min-width:488px) {
+  ul.link-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 289px) {
+  ul.link-nav {
+    display: none;
+  }
+}
