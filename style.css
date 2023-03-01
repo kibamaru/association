@@ -20,7 +20,18 @@ header > ul > li {
 header > ul > li:hover {
   border-bottom: 2px solid white;
   color: white;
-  transition: 800ms linear 200ms;
+  transition: 800ms ease-in 200ms;
+  
+}
+
+.navigation {
+  height: 8vh;
+  background: lightblue;
+  border-bottom: solid 1px darkblue;
+}
+
+nav > .navigation > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 
@@ -34,15 +45,25 @@ header > ul > li:hover {
     }
 }
 
-@media screen and (min-width:488px) {
+@media screen and (min-width:528px) {
   ul.link-nav {
     display: flex;
-    flex-direction: row;
+  }
+  ul.link-nav > li > a {
+    margin: 0em;
+    padding: 1em;
   }
 }
 
-@media screen and (max-width: 289px) {
+@media screen and (max-width: 301px) {
   ul.link-nav {
     display: none;
+  }
+  nav > .navigation > ul > li {
+    display: none;
+  }
+  nav .navigation {
+    background-color: white;
+    border: none;
   }
 }
