@@ -2,6 +2,8 @@ body {
   height: 100vh;
 }
 
+
+
 header {
   background-color: darkblue;
   height: 17vh;
@@ -34,26 +36,19 @@ nav > .navigation > ul > li > a:hover {
   text-decoration: underline;
 }
 
-
-
-@media screen and (min-width:930px) {
-  header > ul {
-    width: 80%;
-  }
-  .logo {
-  width: 20%;
-    }
+.iconek {
+  display: none;
 }
 
-@media screen and (min-width:528px) {
-  ul.link-nav {
-    display: flex;
-  }
-  ul.link-nav > li > a {
-    margin: 0em;
-    padding: 1em;
-  }
+.map {
+  width: 70%;
 }
+
+.content {
+  background: rgba(240, 239, 239, 0.637);
+}
+
+
 
 @media screen and (max-width: 301px) {
   ul.link-nav {
@@ -66,4 +61,69 @@ nav > .navigation > ul > li > a:hover {
     background-color: white;
     border: none;
   }
+
+  aside {
+    margin: auto;
+  }
+
+  aside  {
+    display: none;
+  }
 }
+
+@media screen and (min-width:528px) {
+  ul.link-nav {
+    display: flex;
+  }
+  ul.link-nav > li > a {
+    margin: 0em;
+    padding: 1em;
+  }
+  .banner {
+    background-image: url(./image/banner2.png);
+    background-size: cover;
+    background-position-y: 30%;
+    height: 200px;
+    width: 100vw;
+  }
+
+  .map {
+    background: rgba(240, 239, 239, 0.637);
+  }
+
+  .iconek {
+    height: 40%;
+    width: 30%;
+    display: initial;
+    
+  }
+}
+
+@media screen and (min-width:930px) {
+  header > ul {
+    width: 80%;
+  }
+  .logo {
+  width: 20%;
+  }
+
+  main {
+    display: flex;
+  }
+  .map {
+    width: 40vw;
+    height: 250px;
+    box-shadow: 4px 4px 10px lightgray;
+  }
+  .content {
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 4px 4px 10px lightgray;
+  }
+
+  .iconek {
+    height: 25%;
+    width: 20%;
+  }
+}
+
