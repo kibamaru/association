@@ -1,6 +1,12 @@
-body {
-  height: 100vh;
+.stud {
+  height: 200px;
+  width: 300px;
+  float: left;
+  margin: 1em;
+  border-radius: 5%;
 }
+
+
 
 header {
   background-color: darkblue;
@@ -20,10 +26,96 @@ header > ul > li {
 header > ul > li:hover {
   border-bottom: 2px solid white;
   color: white;
-  transition: 800ms linear 200ms;
+  transition: 800ms ease-in 200ms;
+  
+}
+
+.navigation {
+  height: 8vh;
+  background: lightblue;
+  border-bottom: solid 1px darkblue;
+}
+
+nav > .navigation > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.iconek {
+  display: none;
+}
+
+.map {
+  width: 70%;
+}
+
+.content {
+  background: rgba(240, 239, 239, 0.637);
+}
+
+footer {
+  height: 20vh;
+  background-color: darkblue;
+}
+
+footer ul li {
+  padding: 5px;
 }
 
 
+
+@media screen and (max-width: 301px) {
+  ul.link-nav {
+    display: none;
+  }
+  nav > .navigation > ul > li {
+    display: none;
+  }
+  nav .navigation {
+    background-color: white;
+    border: none;
+  }
+
+  aside {
+    margin: auto;
+  }
+
+  aside  {
+    display: none;
+  }
+}
+
+@media screen and (min-width:528px) {
+  ul.link-nav {
+    display: flex;
+  }
+  ul.link-nav > li > a {
+    margin: 0em;
+    padding: 1em;
+  }
+  .banner {
+    background-image: url(./image/banner2.png);
+    background-size: cover;
+    background-position-y: 30%;
+    height: 200px;
+    width: 100vw;
+  }
+
+  .map {
+    background: rgba(240, 239, 239, 0.637);
+    margin: auto;
+  }
+
+  .iconek {
+    height: 40%;
+    width: 30%;
+    display: initial;
+    
+  }
+
+  .content {
+    margin-bottom: 2em;
+  }
+}
 
 @media screen and (min-width:930px) {
   header > ul {
@@ -31,18 +123,48 @@ header > ul > li:hover {
   }
   .logo {
   width: 20%;
-    }
-}
+  }
 
-@media screen and (min-width:488px) {
-  ul.link-nav {
+  main {
     display: flex;
-    flex-direction: row;
+  }
+  .map {
+    width: 40vw;
+    height: 250px;
+    box-shadow: 4px 4px 10px lightgray;
+    margin: 0;
+    
+  }
+  .content {
+    width: 50vw;
+    height: 75vh;
+    box-shadow: 4px 4px 10px lightgray;
+    
+  }
+
+  .iconek {
+    height: 40%;
+    width: 40%;
+    
+  }
+
+  .other {
+    width: 40vw;
+    height: 40vh;
+    background: rgba(240, 239, 239, 0.637);
+    box-shadow: 4px 4px 10px lightgray;
+    margin-top: 50px;
+    
+    
+  }
+
+  aside {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    font-size: 1.4em;
   }
 }
 
-@media screen and (max-width: 289px) {
-  ul.link-nav {
-    display: none;
-  }
-}
