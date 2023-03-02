@@ -127,6 +127,8 @@ footer ul li {
 
   main {
     display: flex;
+    min-height: 120vh;
+    align-items: center;
   }
   .map {
     width: 40vw;
