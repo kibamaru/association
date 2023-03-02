@@ -10,6 +10,7 @@
         d'aventure et de découvertes basées sur l'univers du manga et de l'animations !">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/3f8afb9991.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="d-flex justify-content-between">
@@ -50,37 +51,103 @@
     </div>
   </nav>
   <div class="banner"></div>
-  <h2 class="text-center">Qui somme-nous ?</h2>
+  <h2 class="text-center my-3">Qui somme-nous ?</h2>
   <main class=" justify-content-around text-center">
-    <div class="content d-flex p-2 m-2 text-center">
+    <div class="content d-flex p-2 text-center">
       <article class="p-2">
         <h3>Otakids</h3>
         <p>Otakids est une association à but non-lucratif qui à pour objectif d'aider les enfants en
            situation difficile (échec scolaire, handicape etc..). Nous mettons à leurs dispositions 
            notre équipe pédagogique composé de bénévoles ayant majoritairement un passé dans 
            l'enseignement pour leurs assurer un soutien scolaire, tout en les faisant baigner dans
-           l'univers du manga et de l'animation japonaise. <br>
+           l'univers du manga et de l'animation japonaise. 
+        </p>
+        <p>
            Notre association à vu le jour en 2022, dans la ville de Lille(Haut-de-france) et à été
            créer par un groupe d'amis dont leurs passion commune pour le Japon et sa culture ont fait
            naître ce projet.
         </p>
-        <img  class="iconek my-auto" src="./image/icone.png" alt="illustration">
+        <img  class="iconek" src="./image/icone.png" alt="illustration">
       </article>
     </div>
     <aside>
-      <div class="map d-flex p-2 m-auto mt-2  flex-column justify-content-center align-items-center">
+      <div class="map d-flex p-2 flex-column justify-content-center align-items-center">
         <h3>Localisation :</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.54356054044!2d3.0118785001551616!3d50.63112979597698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1677698890960!5m2!1sfr!2sfr" 
-                width="300" 
-                height="200" 
+                width="70%" 
+                height="70%" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+      <div class="other p-2 d-flex flex-column justify-content-center table-responsive">
+        
+        <h3>Horaire d'ouverture et activités</h3>
+        <table class="table  my-2">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Lundi</th>
+              <th scope="col">Mardi</th>
+              <th scope="col">Mercredi</th>
+              <th scope="col">Jeudi</th>
+              <th scope="col">Vendredi</th>
+              <th scope="col">Samedi</th>
+              <th scope="col">Dimanche</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Matin (8h/12h)</th>
+              <td>Fermé</td>
+              <td>Soutien scolaire</td>
+              <td>Atelier cuisine (Japonaise)</td>
+              <td>Soutien scolaire</td>
+              <td>Atelier lecture</td>
+              <td>Atelier cosplay/ déguisement</td>
+              <td>Fermé</td>
+            </tr>
+            <tr>
+              <th scope="row">Après-midi (13h/17h)</th>
+              <td>Fermé</td>
+              <td>Activité sportive</td>
+              <td>Dessin manga</td>
+              <td>Cinéma</td>
+              <td>Soutien scolaire</td>
+              <td>Gaming</td>
+              <td>Fermé</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </aside>
   </main>
+  <footer class="d-flex justify-content-evenly text-center align-items-center">
+    <div class="nav-footer d-flex flex-column">
+      <ul class="list-unstyled">
+        <li><a href="#">Galerie</a></li>
+        <li><a href="#">activités</a></li>
+        <li><a href="#">Planning</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="list-unstyled">
+        <li><a href="#">Partenaire</a></li>
+        <li><a href="#">Nous rejoindre</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="social d-flex flex-column">
+      <ul class="list-unstyled">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </footer>
 
 
 

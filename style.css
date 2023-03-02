@@ -1,5 +1,9 @@
-body {
-  height: 100vh;
+.stud {
+  height: 200px;
+  width: 300px;
+  float: left;
+  margin: 1em;
+  border-radius: 5%;
 }
 
 
@@ -48,6 +52,15 @@ nav > .navigation > ul > li > a:hover {
   background: rgba(240, 239, 239, 0.637);
 }
 
+footer {
+  height: 20vh;
+  background-color: darkblue;
+}
+
+footer ul li {
+  padding: 5px;
+}
+
 
 
 @media screen and (max-width: 301px) {
@@ -89,6 +102,7 @@ nav > .navigation > ul > li > a:hover {
 
   .map {
     background: rgba(240, 239, 239, 0.637);
+    margin: auto;
   }
 
   .iconek {
@@ -96,6 +110,10 @@ nav > .navigation > ul > li > a:hover {
     width: 30%;
     display: initial;
     
+  }
+
+  .content {
+    margin-bottom: 2em;
   }
 }
 
@@ -114,16 +132,39 @@ nav > .navigation > ul > li > a:hover {
     width: 40vw;
     height: 250px;
     box-shadow: 4px 4px 10px lightgray;
+    margin: 0;
+    
   }
   .content {
     width: 50vw;
-    height: 60vh;
+    height: 75vh;
     box-shadow: 4px 4px 10px lightgray;
+    
   }
 
   .iconek {
-    height: 25%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
+    
+  }
+
+  .other {
+    width: 40vw;
+    height: 40vh;
+    background: rgba(240, 239, 239, 0.637);
+    box-shadow: 4px 4px 10px lightgray;
+    margin-top: 50px;
+    
+    
+  }
+
+  aside {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    font-size: 1.4em;
   }
 }
 
