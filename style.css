@@ -6,11 +6,15 @@
   border-radius: 5%;
 }
 
-
+nav.bread {
+  background-color: lightblue;
+  border-top: 1px solid darkblue;
+}
 
 header {
   background-color: darkblue;
   height: 17vh;
+  min-height: 100px;
 }
 
 
@@ -46,21 +50,45 @@ nav > .navigation > ul > li > a:hover {
 
 .map {
   width: 70%;
+  background: rgba(240, 239, 239, 0.637);
+  margin: auto;
 }
 
 .content {
   background: rgba(240, 239, 239, 0.637);
+  margin-bottom: 2em;
 }
 
 footer {
-  height: 20vh;
+  margin-top: 10px;
   background-color: darkblue;
+  min-height: 150px;
 }
 
 footer ul li {
   padding: 5px;
 }
 
+.galerie {
+  width: 80%;
+  height: 95%;
+  margin: auto;
+}
+
+.soutien {
+  width: 80vw;
+  height: 130vh;
+  background: rgba(240, 239, 239, 0.637);
+}
+
+.soutienP {
+  width: 70%;
+  height: 45%;
+}
+
+.card {
+  margin: auto;
+}
 
 
 @media screen and (max-width: 301px) {
@@ -82,6 +110,23 @@ footer ul li {
   aside  {
     display: none;
   }
+
+  nav {
+    display: none;
+  }
+
+  .card > img {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .galerie {
+    display: block;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width:528px) {
@@ -100,21 +145,20 @@ footer ul li {
     width: 100vw;
   }
 
-  .map {
-    background: rgba(240, 239, 239, 0.637);
-    margin: auto;
-  }
-
   .iconek {
     height: 40%;
     width: 30%;
     display: initial;
-    
   }
 
-  .content {
-    margin-bottom: 2em;
+  nav {
+    display: block;
   }
+
+  .galerie {
+    background: rgba(240, 239, 239, 0.637);
+  }
+  
 }
 
 @media screen and (min-width:930px) {
