@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otakids - Nous rejoindre</title>
+  <meta name="description" 
+        content="Vous souhaitez rejoindre notre association ? vous êtes au bon endroit !">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/3f8afb9991.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="d-flex justify-content-between">
+    <div class="logo d-flex align-items-center text-white justify-content-center">
+      <a class="d-flex text-decoration-none text-white" href="./index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           width="50" 
+           height="50" 
+           fill="currentColor" 
+           class="bi bi-brightness-alt-high-fill text-danger mx-2" 
+           viewBox="0 0 16 16">
+        <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 
+        0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0
+         1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0
+          0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a
+          .5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
+      </svg>
+      <h1>Ota<span class="text-danger fs-bold">kids</span></h1>
+      </a> 
+    </div>
+    <ul class="link-nav list-unstyled align-items-center justify-content-around my-auto">
+      <li class="p-0 m-0"><a href="./galerie.html" class="text-danger">Galerie</a></li>
+      <li class="p-0 m-0"><a href="./partenaire.html" class="text-danger">Partenenaire</a></li>
+      <li class="p-0 m-0"><a href="./nous_rejoindre.html" class="text-danger">Nous rejoindre</a></li>
+    </ul>
+  </header>
+
+  <nav>
+    <div class="d-flex align-items-center justify-content-center navigation">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="./nos_activite.html">Nos activités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="./planning.html">Planning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+
+  <nav aria-label="breadcrumb" class="bread">
+    <ol class="breadcrumb mx-2">
+      <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Nous rejoindre</li>
+    </ol>
+  </nav>
+
+  <main class="join">
+    <h2 class="text-center">Nous rejoindres !</h2>
+    <article class="p-2">
+      <h3 class="p-2">Bénévolat</h3>
+      <p class="p-2">Vous êtes entré dans cette rubrique ? C'est que vous êtes fait pour rejoindre cette association . <br>
+         Nous recherchons activement de nouveaux bénévoles dans de multiple domaines ! Vous êtes intéressez ?
+         Rien de plus simple il vous suffit de remplir ce formulaire !
+      </p>
+    </article>
+    <div>
+      <form action="example.php" method="post">
+        <fieldset>
+          <legend>Information</legend>
+          <div class="mb-3">
+            <label for="lastName" class="lastName">Nom: </label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Saisissez votre Nom">
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Prénom: </label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Saisissez votre Prénom">
+          </div>
+          <div class="mb-3">
+            <label for="mail" class="form-label">E-mail: </label>
+            <input type="email" class="form-control" id="mail" name="mail" placeholder="Saisissez votre adresse E-mail">
+          </div>
+          <div class="mb-3">
+            <label for="poste" class="form-label">Poste disponible</label>
+            <select id="poste" class="form-select" name="poste">
+              <option value="">Selectionnez un poste</option>
+              <option value="Animateur">Animateur</option>
+              <option value="Educateur">Educateur</option>
+              <option value="Professeur">Professeur</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Valider</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <footer class="d-flex justify-content-evenly text-center align-items-center">
+    <div class="nav-footer d-flex flex-column">
+      <ul class="list-unstyled">
+        <li><a href="./galerie.html">Galerie</a></li>
+        <li><a href="./nos_activite.html">Activités</a></li>
+        <li><a href="./planning.html">Planning</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="list-unstyled">
+        <li><a href="./partenaire.html">Partenaire</a></li>
+        <li><a href="./nous_rejoindre.html">Nous rejoindre</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="social d-flex flex-column">
+      <ul class="list-unstyled">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Fichier Bootstrap -->
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
