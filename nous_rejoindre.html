@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otakids</title>
+  <title>Otakids - Nous rejoindre</title>
   <meta name="description" 
-        content="Bienvenue dans notres association Otakids ! Pour tout les jeunes en quêtes 
-        d'aventure et de découvertes basées sur l'univers du manga et de l'animations !">
+        content="Vous souhaitez rejoindre notre association ? vous êtes au bon endroit !">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
   <script src="https://kit.fontawesome.com/3f8afb9991.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,15 +28,15 @@
           .5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z"/>
       </svg>
       <h1>Ota<span class="text-danger fs-bold">kids</span></h1>
-      </a>
+      </a> 
     </div>
-  
     <ul class="link-nav list-unstyled align-items-center justify-content-around my-auto">
       <li class="p-0 m-0"><a href="./galerie.html" class="text-danger">Galerie</a></li>
       <li class="p-0 m-0"><a href="./partenaire.html" class="text-danger">Partenenaire</a></li>
       <li class="p-0 m-0"><a href="./nous_rejoindre.html" class="text-danger">Nous rejoindre</a></li>
     </ul>
   </header>
+
   <nav>
     <div class="d-flex align-items-center justify-content-center navigation">
       <ul class="nav">
@@ -53,87 +52,56 @@
       </ul>
     </div>
   </nav>
+
   <div class="banner"></div>
 
   <nav aria-label="breadcrumb" class="bread">
     <ol class="breadcrumb mx-2">
-      <li class="breadcrumb-item active">Accueil</li>
+      <li class="breadcrumb-item"><a href="./index.html">Accueil</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Nous rejoindre</li>
     </ol>
   </nav>
 
-  <h2 class="text-center my-3">Qui somme-nous ?</h2>
-  <main class=" justify-content-around text-center">
-    <div class="content d-flex p-2 text-center">
-      <article class="p-2">
-        <h3>Otakids</h3>
-        <p>Otakids est une association à but non-lucratif qui à pour objectif d'aider les enfants en
-           situation difficile (échec scolaire, handicape etc..). Nous mettons à leurs dispositions 
-           notre équipe pédagogique composé de bénévoles ayant majoritairement un passé dans 
-           l'enseignement pour leurs assurer un soutien scolaire, tout en les faisant baigner dans
-           l'univers du manga et de l'animation japonaise. 
-        </p>
-        <p>
-           Notre association à vu le jour en 2022, dans la ville de Lille(Haut-de-france) et à été
-           créer par un groupe d'amis dont leurs passion commune pour le Japon et sa culture ont fait
-           naître ce projet.
-        </p>
-        <img  class="iconek" src="./image/icone.png" alt="illustration">
-      </article>
+  <main class="join">
+    <h2 class="text-center">Nous rejoindres !</h2>
+    <article class="p-2">
+      <h3 class="p-2">Bénévolat</h3>
+      <p class="p-2">Vous êtes entré dans cette rubrique ? C'est que vous êtes fait pour rejoindre cette association . <br>
+         Nous recherchons activement de nouveaux bénévoles dans de multiple domaines ! Vous êtes intéressez ?
+         Rien de plus simple il vous suffit de remplir ce formulaire !
+      </p>
+    </article>
+    <div>
+      <form action="example.php" method="post">
+        <fieldset>
+          <legend>Information</legend>
+          <div class="mb-3">
+            <label for="lastName" class="lastName">Nom: </label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Saisissez votre Nom">
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Prénom: </label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Saisissez votre Prénom">
+          </div>
+          <div class="mb-3">
+            <label for="mail" class="form-label">E-mail: </label>
+            <input type="email" class="form-control" id="mail" name="mail" placeholder="Saisissez votre adresse E-mail">
+          </div>
+          <div class="mb-3">
+            <label for="poste" class="form-label">Poste disponible</label>
+            <select id="poste" class="form-select" name="poste">
+              <option value="">Selectionnez un poste</option>
+              <option value="Animateur">Animateur</option>
+              <option value="Educateur">Educateur</option>
+              <option value="Professeur">Professeur</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Valider</button>
+        </fieldset>
+      </form>
     </div>
-    <aside>
-      <div class="map d-flex p-2 flex-column justify-content-center align-items-center">
-        <h3>Localisation :</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.54356054044!2d3.0118785001551616!3d50.63112979597698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille!5e0!3m2!1sfr!2sfr!4v1677698890960!5m2!1sfr!2sfr" 
-                width="70%" 
-                height="70%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <div class="other p-2 d-flex flex-column justify-content-center table-responsive">
-        
-        <h3>Horaire d'ouverture et activités</h3>
-        <table class="table  my-2">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Lundi</th>
-              <th scope="col">Mardi</th>
-              <th scope="col">Mercredi</th>
-              <th scope="col">Jeudi</th>
-              <th scope="col">Vendredi</th>
-              <th scope="col">Samedi</th>
-              <th scope="col">Dimanche</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Matin (8h/12h)</th>
-              <td>Fermé</td>
-              <td>Soutien scolaire</td>
-              <td>Atelier cuisine (Japonaise)</td>
-              <td>Soutien scolaire</td>
-              <td>Atelier lecture</td>
-              <td>Atelier cosplay/ déguisement</td>
-              <td>Fermé</td>
-            </tr>
-            <tr>
-              <th scope="row">Après-midi (13h/17h)</th>
-              <td>Fermé</td>
-              <td>Activité sportive</td>
-              <td>Dessin manga</td>
-              <td>Cinéma</td>
-              <td>Soutien scolaire</td>
-              <td>Gaming</td>
-              <td>Fermé</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </aside>
   </main>
+
   <footer class="d-flex justify-content-evenly text-center align-items-center">
     <div class="nav-footer d-flex flex-column">
       <ul class="list-unstyled">
@@ -156,10 +124,7 @@
         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </div>
-
   </footer>
-
-
 
   <!-- Fichier Bootstrap -->
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>

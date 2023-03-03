@@ -6,11 +6,15 @@
   border-radius: 5%;
 }
 
-
+nav.bread {
+  background-color: lightblue;
+  border-top: 1px solid darkblue;
+}
 
 header {
   background-color: darkblue;
   height: 17vh;
+  min-height: 100px;
 }
 
 
@@ -27,7 +31,6 @@ header > ul > li:hover {
   border-bottom: 2px solid white;
   color: white;
   transition: 800ms ease-in 200ms;
-  
 }
 
 .navigation {
@@ -46,22 +49,87 @@ nav > .navigation > ul > li > a:hover {
 
 .map {
   width: 70%;
+  background: rgba(240, 239, 239, 0.637);
+  margin: auto;
 }
 
 .content {
   background: rgba(240, 239, 239, 0.637);
+  margin-bottom: 2em;
 }
 
 footer {
-  height: 20vh;
+  margin-top: 10px;
   background-color: darkblue;
+  min-height: 150px;
 }
 
 footer ul li {
   padding: 5px;
 }
 
+.galerie {
+  width: 80%;
+  height: 95%;
+  margin: auto;
+}
 
+.soutien {
+  width: 80vw;
+  height: 130vh;
+  background: rgba(240, 239, 239, 0.637);
+}
+
+.soutienP {
+  width: 70%;
+  height: 45%;
+}
+
+.card {
+  width: 100%;
+}
+
+.partenaire {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+}
+
+.join {
+  display: block;
+}
+
+fieldset {
+  border: solid lightblue 1px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+form {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.contacto {
+  width: 40%;
+  height: 40%;
+  background-color: lightblue;
+  border-radius: 5px 5px 0 0;
+  
+}
+
+.socialo {
+  width: 40%;
+  height: 40%; 
+  background-color: lightblue;   
+  border-radius: 0 0 5px 5px;
+  font-size: 4em;
+}
+
+.lect, .cosp, .dessin , .learn {
+  width: 80%;
+}
 
 @media screen and (max-width: 301px) {
   ul.link-nav {
@@ -82,6 +150,29 @@ footer ul li {
   aside  {
     display: none;
   }
+
+  nav {
+    display: none;
+  }
+
+  .card > img {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .galerie {
+    display: block;
+    margin: 0;
+  }
+
+  .lect > img, .cosp > img, .dessin > img , .learn > img {
+    display: none;
+  }
+
+  
 }
 
 @media screen and (min-width:528px) {
@@ -100,20 +191,25 @@ footer ul li {
     width: 100vw;
   }
 
-  .map {
-    background: rgba(240, 239, 239, 0.637);
-    margin: auto;
-  }
-
   .iconek {
     height: 40%;
     width: 30%;
     display: initial;
-    
   }
 
-  .content {
-    margin-bottom: 2em;
+  nav {
+    display: block;
+  }
+
+  .galerie {
+    background: rgba(240, 239, 239, 0.637);
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .card {
+    margin: auto;
+    width: 50%;
   }
 }
 
@@ -127,7 +223,10 @@ footer ul li {
 
   main {
     display: flex;
+    min-height: 120vh;
+    align-items: center;
   }
+
   .map {
     width: 40vw;
     height: 250px;
@@ -139,13 +238,11 @@ footer ul li {
     width: 50vw;
     height: 75vh;
     box-shadow: 4px 4px 10px lightgray;
-    
   }
 
   .iconek {
     height: 40%;
     width: 40%;
-    
   }
 
   .other {
@@ -154,8 +251,6 @@ footer ul li {
     background: rgba(240, 239, 239, 0.637);
     box-shadow: 4px 4px 10px lightgray;
     margin-top: 50px;
-    
-    
   }
 
   aside {
@@ -166,5 +261,13 @@ footer ul li {
   .social {
     font-size: 1.4em;
   }
-}
+  
+  main.planning {
+    display: block;
+  }
 
+  .planTab {
+    width: 70%;
+    margin: auto;
+  }
+}
