@@ -15,6 +15,7 @@ header {
   background-color: darkblue;
   height: 17vh;
   min-height: 100px;
+  
 }
 
 
@@ -62,6 +63,7 @@ footer {
   margin-top: 10px;
   background-color: darkblue;
   min-height: 150px;
+  
 }
 
 footer ul li {
@@ -131,6 +133,13 @@ form {
   width: 80%;
 }
 
+.copyright {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 301px) {
   ul.link-nav {
     display: none;
@@ -172,7 +181,9 @@ form {
     display: none;
   }
 
-  
+  .social ul {
+    display: none;
+  }
 }
 
 @media screen and (min-width:528px) {
@@ -188,7 +199,7 @@ form {
     background-size: cover;
     background-position-y: 30%;
     height: 200px;
-    width: 100vw;
+    width: 100%;
   }
 
   .iconek {
