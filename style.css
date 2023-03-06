@@ -6,28 +6,27 @@
   border-radius: 5%;
 }
 
-nav.bread {
+nav > .bread {
   background-color: lightblue;
   border-top: 1px solid darkblue;
 }
 
-header {
+.header {
   background-color: darkblue;
   height: 17vh;
   min-height: 100px;
-  display: flex;
 }
 
-header > ul > li > a {
+.header > ul > li > a {
   text-decoration: none;
   font-weight: bold;
 }
 
-header > ul > li {
+.header > ul > li {
   padding: 10px;
 }
 
-header > ul > li:hover {
+.header > ul > li:hover {
   border-bottom: 2px solid white;
   color: white;
   transition: 800ms ease-in 200ms;
@@ -37,6 +36,7 @@ header > ul > li:hover {
   height: 8vh;
   background: lightblue;
   border-bottom: solid 1px darkblue;
+  min-height: 50px;
 }
 
 nav > .navigation > ul > li > a:hover {
@@ -62,7 +62,6 @@ footer {
   margin-top: 10px;
   background-color: darkblue;
   min-height: 150px;
-  
 }
 
 footer ul li {
@@ -117,7 +116,6 @@ form {
   height: 40%;
   background-color: lightblue;
   border-radius: 15px;
-  
 }
 
 .socialo {
@@ -142,12 +140,9 @@ form {
 }
 
 @media screen and (max-width: 150px) {
-  header .logo a {
-    display: flex;
+  .header .logo a {
     flex-direction: column;
-    
     align-items: center;
-    
   }
 
   footer {
@@ -173,7 +168,7 @@ form {
   }
 }
 
-@media screen and (max-width: 301px) {
+@media screen and (max-width: 325px) {
   ul.link-nav {
     display: none;
   }
@@ -187,9 +182,6 @@ form {
 
   aside {
     margin: auto;
-  }
-
-  aside  {
     display: none;
   }
 
@@ -227,7 +219,7 @@ form {
   }
 }
 
-@media screen and (min-width:528px) {
+@media screen and (min-width:552px) {
   ul.link-nav {
     display: flex;
   }
@@ -239,18 +231,15 @@ form {
     background-image: url(./image/banner2.png);
     background-size: cover;
     background-position-y: 30%;
-    height: 200px;
+    height: 24vh;
     width: 100%;
+    min-height: 100px;
   }
 
   .iconek {
     height: 40%;
     width: 30%;
     display: initial;
-  }
-
-  nav {
-    display: block;
   }
 
   .galerie {
@@ -263,12 +252,10 @@ form {
     margin: auto;
     width: 50%;
   }
-
-  
 }
 
 @media screen and (min-width:930px) {
-  header > ul {
+  .header > ul {
     width: 80%;
   }
   .logo {
