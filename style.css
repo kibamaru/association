@@ -6,6 +6,9 @@
   border-radius: 5%;
 }
 
+.home {
+  flex-direction: column;
+}
 nav > .bread {
   background-color: lightblue;
   border-top: 1px solid darkblue;
@@ -44,18 +47,32 @@ nav > .navigation > ul > li > a:hover {
 }
 
 .iconek {
+  width: 30%;
+}
+
+.other {
+  background: rgba(240, 239, 239, 0.637);
+  box-shadow: 4px 4px 10px lightgray;
+  width: 100%;
   display: none;
 }
 
 .map {
-  width: 70%;
   background: rgba(240, 239, 239, 0.637);
-  margin: auto;
+  box-shadow: 4px 4px 10px lightgray;
+  width: 100%;
+
 }
 
 .content {
   background: rgba(240, 239, 239, 0.637);
   margin-bottom: 2em;
+  box-shadow: 4px 4px 10px lightgray;
+  width: 80%;
+}
+
+.bloc {
+  height: 100%;
 }
 
 footer {
@@ -142,13 +159,14 @@ form {
   flex-direction: column;
 }
 
+
 @media screen and (max-width: 150px) {
   .header .logo a {
     flex-direction: column;
     align-items: center;
   }
 
-  .content p {
+  p {
     font-size: 0.7em;
   }
 
@@ -180,7 +198,6 @@ form {
   }
 
   aside {
-    margin: auto;
     display: none;
   }
 
@@ -216,6 +233,10 @@ form {
   .socialo > p {
     display: none;
   }
+
+  .iconek {
+    display: none;
+  }
 }
 
 @media screen and (min-width:552px) {
@@ -233,6 +254,10 @@ form {
     height: 24vh;
     width: 100%;
     min-height: 100px;
+  }
+
+  .home {
+    flex-direction: row;
   }
 
   .iconek {
@@ -255,6 +280,16 @@ form {
   .nav-foot {
     flex-direction: row;
   }
+
+  .other {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    width: 50%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width:930px) {
@@ -264,52 +299,16 @@ form {
   .logo {
   width: 20%;
   }
-
-  main {
-    display: flex;
-    min-height: 120vh;
-    align-items: center;
-  }
-
-  .map {
-    width: 40vw;
-    height: 250px;
-    box-shadow: 4px 4px 10px lightgray;
-    margin: 0;
-    
-  }
-  .content {
-    width: 50vw;
-    height: 75vh;
-    box-shadow: 4px 4px 10px lightgray;
-    min-height: 600px;
-  }
-
+  
   .iconek {
     height: 40%;
     width: 40%;
   }
 
-  .other {
-    width: 40vw;
-    height: 40vh;
-    background: rgba(240, 239, 239, 0.637);
-    box-shadow: 4px 4px 10px lightgray;
-    margin-top: 50px;
-  }
-
-  aside {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-
   .social {
     font-size: 1.4em;
   }
-  
-  main.planning {
-    display: block;
-  }
+ 
 
   .planTab {
     width: 70%;
