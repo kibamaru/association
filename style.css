@@ -85,20 +85,17 @@ footer ul li {
 }
 
 .galerie {
-  width: 80%;
-  height: 95%;
-  margin: auto;
+  width: 70%;
 }
 
 .soutien {
-  width: 80vw;
-  height: 130vh;
   background: rgba(240, 239, 239, 0.637);
+  width: 70%;
 }
 
 .soutienP {
-  width: 70%;
-  height: 45%;
+  width: 90%;
+  padding: 10px;
 }
 
 .card {
