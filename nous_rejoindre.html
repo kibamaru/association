@@ -69,43 +69,47 @@
       </div>
     </nav>
 
-  <main class="join">
-    <h2 class="text-center">Nous rejoindres !</h2>
-    <article class="p-2">
-      <h3 class="p-2">Bénévolat</h3>
-      <p class="p-2">Vous êtes entré dans cette rubrique ? C'est que vous êtes fait pour rejoindre cette association . <br>
-         Nous recherchons activement de nouveaux bénévoles dans de multiple domaines ! Vous êtes intéressez ?
-         Rien de plus simple il vous suffit de remplir ce formulaire !
-      </p>
-    </article>
-    <div>
-      <form action="example.php" method="post">
-        <fieldset>
-          <legend>Information</legend>
-          <div class="mb-3">
-            <label for="lastName" class="lastName">Nom: </label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Saisissez votre Nom">
-          </div>
-          <div class="mb-3">
-            <label for="name" class="form-label">Prénom: </label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Saisissez votre Prénom">
-          </div>
-          <div class="mb-3">
-            <label for="mail" class="form-label">E-mail: </label>
-            <input type="email" class="form-control" id="mail" name="mail" placeholder="Saisissez votre adresse E-mail">
-          </div>
-          <div class="mb-3">
-            <label for="poste" class="form-label">Poste disponible</label>
-            <select id="poste" class="form-select" name="poste">
-              <option value="">Selectionnez un poste</option>
-              <option value="Animateur">Animateur</option>
-              <option value="Educateur">Educateur</option>
-              <option value="Professeur">Professeur</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary">Valider</button>
-        </fieldset>
-      </form>
+  <main>
+    <div class="container d-flex flex-column align-items-center">
+      <h2>Nous rejoindres !</h2>
+      <article>
+        <h3>Bénévolat</h3>
+        <p>Vous êtes entré dans cette rubrique ? C'est que vous êtes fait pour rejoindre cette association .
+           Nous recherchons activement de nouveaux bénévoles dans de multiple domaines ! Vous êtes intéressez ?
+           Rien de plus simple il vous suffit de remplir ce formulaire !
+        </p>
+      </article>
+      
+      <!-- Formulaire -->
+      <div class="formulaire my-2">
+        <form action="example.php" method="post">
+          <fieldset>
+            <legend class="text-center">Information</legend>
+            <div class="mb-3">
+              <label for="lastName" class="lastName">Nom: </label>
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Saisissez votre Nom">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Prénom: </label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Saisissez votre Prénom">
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label">E-mail: </label>
+              <input type="email" class="form-control" id="mail" name="mail" placeholder="Saisissez votre adresse E-mail">
+            </div>
+            <div class="mb-3">
+              <label for="poste" class="form-label">Poste disponible</label>
+              <select id="poste" class="form-select" name="poste">
+                <option value="">Selectionnez un poste</option>
+                <option value="Animateur">Animateur</option>
+                <option value="Educateur">Educateur</option>
+                <option value="Professeur">Professeur</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Valider</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </main>
 
