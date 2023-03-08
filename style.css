@@ -2,20 +2,17 @@
   width: 50%;  
 }
 
-.home {
+.home, .nav-foot {
   flex-direction: column;
 }
 
 nav > .bread {
-  background-color: lightblue;
   border-top: 1px solid darkblue;
 }
 
-.header {
+.header, footer {
   background-color: darkblue;
-  height: 17vh;
   min-height: 100px;
-  margin-top: 1em;
 }
 
 .header > ul > li > a {
@@ -30,53 +27,36 @@ nav > .bread {
   transition: 800ms ease-in 200ms;
 }
 
+.navigation, .bread, .contacto {
+  background: lightblue;
+}
+
 .navigation {
   height: 8vh;
-  background: lightblue;
-  min-height: 50px;
 }
 
 .navigation > ul > li > a:hover {
   text-decoration: underline;
 }
 
-.iconek {
-  width: 80%;
-}
-.other {
+.soutien {
   background: rgba(240, 239, 239, 0.637);
-  box-shadow: 4px 4px 10px lightgray;
-  display: none;
 }
 
-.map {
-  background: rgba(240, 239, 239, 0.637);
+.other, .map, .content {
   box-shadow: 4px 4px 10px lightgray;
+  background: rgba(240, 239, 239, 0.637);
+}
+
+.iconek, .content, .soutien, .soutienP, .contacto {
+  width: 80%;
 }
 
 .content {
-  background: rgba(240, 239, 239, 0.637);
   margin-bottom: 2em;
-  box-shadow: 4px 4px 10px lightgray;
-  width: 80%;
 }
 
-footer {
-  background-color: darkblue;
-  min-height: 150px;
-}
-
-footer ul li {
-  padding: 5px;
-}
-
-.soutien {
-  background: rgba(240, 239, 239, 0.637);
-  width: 70%;
-}
-
-.soutienP {
-  width: 90%;
+footer ul li, .soutienP, fieldset, .contacto > i {
   padding: 10px;
 }
 
@@ -84,20 +64,9 @@ footer ul li {
   min-height: 60vh;
 }
 
-fieldset {
+fieldset, .contacto {
   border: solid lightblue 1px;
   border-radius: 10px;
-  padding: 10px;
-}
-
-.contacto {
-  width: 70%;
-  background-color: lightblue;
-  border-radius: 15px;
-}
-
-.contacto > i {
-  margin-top: 10px;
 }
 
 .copyright {
@@ -105,11 +74,7 @@ fieldset {
   text-align: center;
 }
 
-.nav-foot {
-  flex-direction: column;
-}
-
-section img {
+section img, .other {
   display: none;
 }
 
@@ -149,7 +114,7 @@ section img {
 }
 
 @media screen and (min-width:552px) {
-  ul.link-nav {
+  ul.link-nav, .other {
     display: flex;
   }
 
@@ -161,7 +126,7 @@ section img {
     min-height: 100px;
   }
 
-  .home {
+  .home, .nav-foot {
     flex-direction: row;
   }
   
@@ -174,12 +139,7 @@ section img {
     width: 50%;
   }
 
-  .nav-foot {
-    flex-direction: row;
-  }
-
   .other {
-    display: flex;
     flex-direction: column;
   }
 
