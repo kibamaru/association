@@ -1,31 +1,23 @@
-.stud {
-  height: 200px;
-  width: 300px;
-  float: left;
-  margin: 1em;
-  border-radius: 5%;
+.formulaire {
+  width: 50%;  
 }
 
-.home {
+.home, .nav-foot {
   flex-direction: column;
 }
+
 nav > .bread {
-  background-color: lightblue;
   border-top: 1px solid darkblue;
 }
 
-.header {
+.header, footer {
   background-color: darkblue;
-  height: 17vh;
   min-height: 100px;
 }
 
 .header > ul > li > a {
   text-decoration: none;
   font-weight: bold;
-}
-
-.header > ul > li {
   padding: 10px;
 }
 
@@ -35,130 +27,56 @@ nav > .bread {
   transition: 800ms ease-in 200ms;
 }
 
-.navigation {
-  height: 8vh;
+.navigation, .bread, .contacto {
   background: lightblue;
-  border-bottom: solid 1px darkblue;
-  min-height: 50px;
 }
 
-nav > .navigation > ul > li > a:hover {
+.navigation {
+  height: 8vh;
+}
+
+.navigation > ul > li > a:hover {
   text-decoration: underline;
 }
 
-.iconek {
-  width: 30%;
+.soutien {
+  background: rgba(240, 239, 239, 0.637);
 }
 
-.other {
-  background: rgba(240, 239, 239, 0.637);
+.other, .map, .content {
   box-shadow: 4px 4px 10px lightgray;
-  width: 100%;
-  display: none;
+  background: rgba(240, 239, 239, 0.637);
 }
 
-.map {
-  background: rgba(240, 239, 239, 0.637);
-  box-shadow: 4px 4px 10px lightgray;
-  width: 100%;
-
+.iconek, .content, .soutien, .soutienP, .contacto {
+  width: 80%;
 }
 
 .content {
-  background: rgba(240, 239, 239, 0.637);
   margin-bottom: 2em;
-  box-shadow: 4px 4px 10px lightgray;
-  width: 80%;
 }
 
-.bloc {
-  height: 100%;
-}
-
-footer {
-  background-color: darkblue;
-  min-height: 150px;
-}
-
-footer ul li {
-  padding: 5px;
-}
-
-.galerie {
-  width: 80%;
-  height: 95%;
-  margin: auto;
-}
-
-.soutien {
-  width: 80vw;
-  height: 130vh;
-  background: rgba(240, 239, 239, 0.637);
-}
-
-.soutienP {
-  width: 70%;
-  height: 45%;
-}
-
-.card {
-  width: 100%;
-}
-
-.partenaire {
-  width: 100%;
-  height: 100%;
-  min-height: 60vh;
-}
-
-.join {
-  display: block;
-}
-
-fieldset {
-  border: solid lightblue 1px;
-  border-radius: 10px;
+footer ul li, .soutienP, fieldset, .contacto > i {
   padding: 10px;
 }
 
-form {
-  width: 50%;
-  height: 50%;
-  margin: auto;
+.partenaire {
+  min-height: 60vh;
 }
 
-.contacto {
-  width: 70%;
-  height: 40%;
-  background-color: lightblue;
-  border-radius: 15px;
-}
-
-.socialo {
-  width: 70%;
-  height: 40%; 
-  background-color: lightblue;   
-  border-radius: 15px;
-}
-
-.socialo > i {
-  margin-top: 10px;
-}
-
-.lect, .cosp, .dessin , .learn {
-  width: 80%;
+fieldset, .contacto {
+  border: solid lightblue 1px;
+  border-radius: 10px;
 }
 
 .copyright {
-  background-color: darkblue;
   color: white;
   text-align: center;
 }
 
-.nav-foot {
-  flex-direction: column;
+section img, .other {
+  display: none;
 }
-
 
 @media screen and (max-width: 150px) {
   .header .logo a {
@@ -166,7 +84,7 @@ form {
     align-items: center;
   }
 
-  p {
+  p, label {
     font-size: 0.7em;
   }
 
@@ -179,49 +97,13 @@ form {
     height: 100%;
     font-size: 0.5em;
   }
-
-  label {
-    font-size: 0.7em;
-  }
 }
 
 @media screen and (max-width: 325px) {
-  ul.link-nav {
+  ul.link-nav, aside, nav, .card > img, .contacto > p, .iconek, .picPlan {
     display: none;
   }
-  nav > .navigation > ul > li {
-    display: none;
-  }
-  nav .navigation {
-    background-color: white;
-    border: none;
-  }
-
-  aside {
-    display: none;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .card > img {
-    display: none;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .galerie {
-    display: block;
-    margin: 0;
-  }
-
-  .lect > img, .cosp > img, .dessin > img , .learn > img {
-    display: none;
-  }
-
+ 
   ul.social {
     display: flex;
   }
@@ -229,66 +111,44 @@ form {
   legend {
     font-size: 0.7em;
   }
-
-  .socialo > p {
-    display: none;
-  }
-
-  .iconek {
-    display: none;
-  }
 }
 
 @media screen and (min-width:552px) {
-  ul.link-nav {
+  ul.link-nav, .other {
     display: flex;
   }
-  ul.link-nav > li > a {
-    margin: 0em;
-    padding: 1em;
-  }
+
   .banner {
     background-image: url(./image/banner2.png);
     background-size: cover;
     background-position-y: 30%;
     height: 24vh;
-    width: 100%;
     min-height: 100px;
   }
 
-  .home {
+  .home, .nav-foot {
     flex-direction: row;
   }
-
-  .iconek {
-    height: 40%;
-    width: 30%;
-    display: initial;
-  }
-
+  
   .galerie {
     background: rgba(240, 239, 239, 0.637);
-    display: flex; 
-    flex-direction: column;
   }
 
-  .card {
+  .card, aside {
     margin: auto;
     width: 50%;
   }
 
-  .nav-foot {
-    flex-direction: row;
-  }
-
   .other {
-    display: flex;
     flex-direction: column;
   }
 
-  aside {
-    width: 50%;
-    height: 100%;
+  section img {
+    display: block;
+  }
+
+  .navigation {
+    border-bottom: solid 1px darkblue;
   }
 }
 
@@ -296,22 +156,12 @@ form {
   .header > ul {
     width: 80%;
   }
-  .logo {
-  width: 20%;
-  }
-  
+
   .iconek {
-    height: 40%;
     width: 40%;
   }
 
   .social {
     font-size: 1.4em;
-  }
- 
-
-  .planTab {
-    width: 70%;
-    margin: auto;
   }
 }
